@@ -25,29 +25,25 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.bg-textured-dark {
+.bg-tailwind {
   background-color: #09090b;
-  background-image: radial-gradient(
-    circle at 0.5px 0.5px,
-    rgba(255, 255, 255, 0.04) 0.5px,
-    transparent 0
-  );
-  background-size: 24px 24px;
-  isolation: isolate;
-  position: relative;
-  overflow: hidden;
-}
-
-.bg-textured-dark::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(
-    ellipse 60% 40% at 50% -10%,
-    rgba(43, 127, 255, 0.12) 0%,
-    rgba(120, 80, 255, 0.08) 40%,
-    transparent 60%
-  );
-  pointer-events: none;
-  z-index: -1;
+  background-image:
+    radial-gradient(
+      ellipse 80% 40% at 50% 25%,
+      rgba(255, 255, 255, 0.07) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      circle at 2px 2px,
+      rgba(255, 255, 255, 0.07) 2px,
+      transparent 0
+    ),
+    linear-gradient(rgba(255, 255, 255, 0.04) 2px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 2px, transparent 1px);
+  background-size:
+    100% 100%,
+    60px 60px,
+    120px 120px,
+    120px 120px;
+  background-repeat: no-repeat, repeat, repeat, repeat;
 }
