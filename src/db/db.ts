@@ -8,6 +8,7 @@ export default async function connectDatabase() {
     const connection = await mongoose.connect(`${process.env.DATABASE_URL}/${DB_NAME}`)
 
     console.log(`Connected to ${connection.connection.host}`)
+    return connection
   } catch (error: unknown) {
    return Response.json(
       {

@@ -17,7 +17,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    connectDatabase();
+    await connectDatabase();
 
     const isAlreadySubscribed = await Subscriber.findOne({ $or: [{ email }] });
 
@@ -55,11 +55,11 @@ export async function POST(request: NextRequest) {
       { status: 200 },
     );
   } catch (error) {
+    console.log(error)
     return NextResponse.json(
       {
         success: false,
-        message: "An internal error occurred & we are working on it.",
-        ErrorMessage: error,
+        message: "An internal error occurred & we are working on it."
       },
       { status: 500 },
     );
