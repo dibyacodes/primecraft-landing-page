@@ -178,7 +178,7 @@ export default function Home() {
                 </span>
                 , you get to run a command that{" "}
                 <span className="text-blue-100 bg-blue-600 px-1 font-semibold">
-                  does it all for you, in minutes
+                  does it all for you, in minutes.
                 </span>
               </p>
             </div>
