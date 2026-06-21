@@ -45,7 +45,7 @@ export default function Home() {
       <div className="bg-tailwind">
         <header className="hidden sm:block px-4 sm:px-6 md:px-10 py-3 sm:py-5">
           <Image
-            className="dark:invert"
+            className="invert"
             src={"/primecraft.svg"}
             alt="primecraft logo"
             width={30}
@@ -56,7 +56,7 @@ export default function Home() {
         <main className="px-4 sm:px-6 md:px-[5%] py-8 sm:py-10 md:py-[5%] flex flex-col justify-baseline gap-4 sm:gap-5 items-center">
           <div id="logo" className="pb-3 sm:pb-5">
             <Image
-              className="dark:invert"
+              className="invert"
               src="/primecraft.svg"
               alt="Next.js logo"
               width={80}
@@ -83,10 +83,10 @@ export default function Home() {
             id="brand"
             className="flex flex-col gap-4 sm:gap-5 md:gap-7 py-3 sm:py-5 items-center"
           >
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-wrap font-semibold leading-tight sm:leading-10 font-sans tracking-tight text-black dark:text-[#DBEAFE]">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-wrap font-semibold leading-tight sm:leading-10 font-sans tracking-tight text-[#DBEAFE]">
               {subscribed ? "Congratulations" : "Primecraft"}
             </h1>
-            <p className="tracking-[-1.2] text-base sm:text-lg md:text-2xl max-w-[90%] sm:max-w-[85%] md:max-w-[80%] text-center font-sans dark:text-[#DBEAFE] leading-5 sm:leading-6 md:leading-7 font-medium">
+            <p className="tracking-[-1.2] text-base sm:text-lg md:text-2xl max-w-[90%] sm:max-w-[85%] md:max-w-[80%] text-center font-sans text-[#DBEAFE] leading-5 sm:leading-6 md:leading-7 font-medium">
               {subscribed
                 ? "Thank you for joining the waitlist ! You're among the first ones to experience the launch of Primecraft"
                 : "Launch your SaaS, online business, course, or any digital product in hours not days"}
@@ -112,7 +112,7 @@ export default function Home() {
                   setProcessFailure(false);
                 }}
                 type="email"
-                className="bg-[#19191C] border-2 border-[#27272A] py-2 px-3 sm:px-4 rounded-full outline-none w-full sm:max-w-xl text-sm sm:text-base"
+                className="bg-[#19191C] text-blue-100 font-medium font-sans border-2 border-[#27272A] py-2 px-3 sm:px-4 rounded-full outline-none w-full sm:max-w-xl text-sm sm:text-base placeholder:font-sans"
                 placeholder="Email"
               />
               <button
@@ -162,7 +162,7 @@ export default function Home() {
               <small className="font-mono font-semibold text-xs sm:text-sm text-blue-500">
                 One <span className="font-bold">git clone</span> away
               </small>
-              <h1 className="font-sans text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight sm:leading-12 tracking-[-1.5] md:tracking-[-2.8] max-w-lg dark:text-[#DBEAFE]">
+              <h1 className="font-sans text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight sm:leading-12 tracking-[-1.5] md:tracking-[-2.8] max-w-lg text-[#DBEAFE]">
                 One command that does it all for you
               </h1>
             </div>
@@ -202,7 +202,7 @@ export default function Home() {
                 </span>
               </div>
               <div className="flex flex-col gap-2">
-                <h1 className="text-2xl sm:text-3xl font-sans max-w-lg tracking-[-1] sm:tracking-[-2] font-medium">
+                <h1 className="text-2xl text-blue-100 sm:text-3xl font-sans max-w-lg tracking-[-1] sm:tracking-[-2] font-medium">
                   Everything you need to launch & scale a business + Life Time
                   Access
                 </h1>
@@ -213,7 +213,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col md:py-10 items-center gap-3 sm:gap-5 w-full md:w-auto">
               <Image
-                className="dark:invert"
+                className="invert"
                 src={"/primecraft.svg"}
                 alt="primecraft logo"
                 width={100}
