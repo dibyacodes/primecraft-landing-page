@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Launch your startup in hours",
-  description: "",
+  title: "Primecraft — Launch your SaaS in hours with auth, admin & subscriptions built-in",
+  description:
+    "Primecraft is the NextJS boilerplate with auth, admin dashboard, owner-managed subscriptions, Razorpay, Neon + Drizzle. One-time $140, lifetime access.",
 };
 
 export default function RootLayout({
