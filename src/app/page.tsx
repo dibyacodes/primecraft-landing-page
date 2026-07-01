@@ -151,7 +151,7 @@ export default function Home() {
               </div>
               <div className="flex flex-row gap-2 items-center sm:items-baseline pt-3 animate-pulse">
                 <p className="font-sans font-medium text-blue-500 text-xs sm:text-sm text-center">
-                  First 50 buyers get lifetime access at $98 instead of $140
+                  First 50 buyers get lifetime access at $98 instead of $179
                 </p>
               </div>
             </div>
@@ -272,7 +272,7 @@ export default function Home() {
               One-time. Lifetime. Unlimited projects.
             </span>
             <div className="flex items-baseline gap-1">
-              <span className="text-4xl sm:text-5xl font-bold text-[#DBEAFE]">$140</span>
+              <span className="text-4xl sm:text-5xl font-bold text-[#DBEAFE]">$179</span>
             </div>
             <p className="text-zinc-400 font-sans text-sm text-center">
               No tiers. No subscriptions. No &quot;pro&quot; upsell.
