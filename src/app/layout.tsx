@@ -13,9 +13,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Primecraft — Launch your SaaS in hours with auth, admin & subscriptions built-in",
+  title:
+    "Primecraft — Launch your SaaS in hours with auth, admin & subscriptions built-in",
   description:
-    "Primecraft is the NextJS boilerplate with auth, admin dashboard, owner-managed subscriptions, Razorpay, Neon + Drizzle. One-time $140, lifetime access.",
+    "Primecraft is the NextJS boilerplate with auth, admin dashboard, owner-managed subscriptions, Razorpay, Neon + Drizzle. One-time $179, lifetime access.",
+  openGraph: {
+    title: "Primecraft — Launch your SaaS in hours with auth, admin & subscriptions built-in",
+    description: "Experience is knowing that auth, subscriptions, and an admin dashboard shouldn't take you 3 weeks to build.",
+    images: ["https://primecraftwait.vercel.app"],
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({
