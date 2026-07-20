@@ -77,7 +77,7 @@ export default function Home() {
                 priority
               />
               <p className="text-[#2b7fff] text-xs sm:text-sm font-semibold font-sans">
-                Launching July 19 2026
+                Launching August 2026
               </p>
             </div>
             <div
